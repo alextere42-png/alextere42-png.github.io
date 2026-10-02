@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="no" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lash Lab by Kseniia Latysheva | Eyelash Extensions in Voss</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        .font-serif-title {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-amber-100 selection:text-amber-900">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex flex-col">
+                <span class="font-serif-title text-2xl tracking-wide text-stone-900 font-normal">LASH LAB</span>
+                <span class="text-[10px] tracking-widest text-stone-500 uppercase -mt-1">by Kseniia Latysheva</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-600">
+                <a href="#about" class="hover:text-stone-900 transition" data-i18n="nav_about">Om oss</a>
+                <a href="#services" class="hover:text-stone-900 transition" data-i18n="nav_services">Tjenester</a>
+                <a href="#reviews" class="hover:text-stone-900 transition" data-i18n="nav_reviews">Anmeldelser</a>
+                <a href="#location" class="hover:text-stone-900 transition" data-i18n="nav_location">Kontakt</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <!-- Language Switcher -->
+                <button id="lang-toggle" onclick="toggleLanguage()" class="px-2.5 py-1 text-xs border border-stone-300 rounded-md hover:bg-stone-100 font-medium text-stone-700 transition">
+                    EN
+                </button>
+
+                <a href="https://lashlabbykseniialatysheva.setmore.com/" target="_blank" rel="noopener" class="hidden sm:inline-flex bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all" data-i18n="btn_book">
+                    Bestill time
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-amber-50 border border-amber-200/60 rounded-full px-3 py-1">
+                    <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                    <span class="text-xs font-medium text-amber-900" data-i18n="hero_badge">Voss • Eyelash Studio</span>
+                </div>
+                
+                <h1 class="font-serif-title text-4xl sm:text-5xl lg:text-6xl text-stone-900 leading-[1.15]">
+                    <span data-i18n="hero_title_1">Fremhev din</span> <br>
+                    <span class="italic text-stone-600 font-normal" data-i18n="hero_title_2">naturlige skjønnhet</span>
+                </h1>
+
+                <p class="text-stone-600 text-base sm:text-lg max-w-xl font-light leading-relaxed" data-i18n="hero_description">
+                    Skreddersydd vippedesign i Vossevangen. Lette, behagelige og slitesterke vippeextensions opptil 6 uker.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                    <a href="https://lashlabbykseniialatysheva.setmore.com/" target="_blank" rel="noopener" class="bg-stone-900 hover:bg-stone-800 text-white text-sm font-medium tracking-wide px-8 py-3.5 rounded-full text-center shadow-md hover:shadow-lg transition-all" data-i18n="hero_cta">
+                        Bestill online (Setmore)
+                    </a>
+                    <a href="#services" class="border border-stone-300 hover:bg-stone-100 text-stone-800 text-sm font-medium px-8 py-3.5 rounded-full text-center transition" data-i18n="hero_secondary">
+                        Se behandlinger
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <div class="aspect-[4/5] rounded-3xl bg-stone-200 overflow-hidden shadow-xl border-4 border-white">
+                        <img 
+                            src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RWbqD9cSJ2DEIdrILF0R9nrpPlDOxgbQYdibp0-RaohYX5sS3mIHyISZSHAWBnqO0fs_AaQFZ7VUVez5L6SU5jttPfWX5-87d0kECBZ9SQyhzbOxY2wfKwEegsErfVq8MWxtWTbr98VZw=w800" 
+                            alt="Kseniia Latysheva - Lash Lab" 
+                            referrerpolicy="no-referrer"
+                            class="w-full h-full object-cover object-center"
+                        >
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-lg border border-stone-100 max-w-[200px]">
+                        <p class="font-serif-title text-stone-900 text-sm font-semibold">Kseniia Latysheva</p>
+                        <p class="text-xs text-stone-500" data-i18n="hero_photo_sub">Founder of Lash Lab studio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white border-y border-stone-200/60">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
+            <h2 class="font-serif-title text-2xl sm:text-3xl text-stone-900" data-i18n="about_title">Kseniia Latysheva</h2>
+            <p class="text-xs tracking-widest text-amber-800 uppercase font-semibold" data-i18n="about_founder">Founder of Lash Lab studio</p>
+            <p class="text-stone-600 text-base sm:text-lg leading-relaxed font-light italic max-w-2xl mx-auto" data-i18n="about_text">
+                «Lash Lab er skapt for å gi deg et elegant blikk som føles helt naturlig og lett på øyet. Hver behandling tilpasses din øyeform, med fokus på kvalitet, trygghet og hygiene.»
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="font-serif-title text-3xl sm:text-4xl text-stone-900" data-i18n="services_title">Tjenester & Behandlinger</h2>
+                <p class="text-stone-500" data-i18n="services_subtitle">Sikre hypoallergene materialer og behagelig opplevelse</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1: Klassisk -->
+                <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-serif-title text-xl text-stone-900" data-i18n="s1_title">Klassisk (1D)</h3>
+                            <span class="text-[11px] font-semibold px-2 py-0.5 bg-stone-100 text-stone-600 rounded-full" data-i18n="tag_classic">Naturlig</span>
+                        </div>
+                        <p class="text-stone-600 text-sm mb-6" data-i18n="s1_desc">Naturlig resultat med effekt som godt påført maskara.</p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100 flex justify-between items-center">
+                        <span class="text-xs text-stone-400">~ 1.5 - 2 t</span>
+                        <a href="https://lashlabbykseniialatysheva.setmore.com/" target="_blank" rel="noopener" class="text-sm font-semibold text-stone-900 hover:text-amber-700 transition" data-i18n="btn_book_item">Bestill &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Service 2: 2D Volum -->
+                <div class="bg-white p-6 rounded-2xl border-2 border-stone-900 shadow-md relative flex flex-col justify-between">
+                    <div class="absolute -top-3 right-4 bg-stone-900 text-white text-[9px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full" data-i18n="popular_tag">
+                        Mest populær
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-serif-title text-xl text-stone-900" data-i18n="s2_title">2D Volum</h3>
+                            <span class="text-[11px] font-semibold px-2 py-0.5 bg-amber-50 text-amber-800 rounded-full" data-i18n="tag_volume">Mykt volum</span>
+                        </div>
+                        <p class="text-stone-600 text-sm mb-6" data-i18n="s2_desc">Lett og naturlig fylde som gir blikket mer dybde og tetthet.</p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100 flex justify-between items-center">
+                        <span class="text-xs text-stone-400">~ 2 t</span>
+                        <a href="https://lashlabbykseniialatysheva.setmore.com/" target="_blank" rel="noopener" class="text-sm font-semibold text-stone-900 hover:text-amber-700 transition" data-i18n="btn_book_item">Bestill &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Service 3: 3D Volum -->
+                <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-serif-title text-xl text-stone-900" data-i18n="s3_title">3D Volum</h3>
+                            <span class="text-[11px] font-semibold px-2 py-0.5 bg-stone-100 text-stone-600 rounded-full" data-i18n="tag_3d">Fyldig</span>
+                        </div>
+                        <p class="text-stone-600 text-sm mb-6" data-i18n="s3_desc">Ekstra fylde og dybde for et mer fremhevet og ekspressivt blikk.</p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100 flex justify-between items-center">
+                        <span class="text-xs text-stone-400">~ 2 - 2.5 t</span>
+                        <a href="https://lashlabbykseniialatysheva.setmore.com/" target="_blank" rel="noopener" class="text-sm font-semibold text-stone-900 hover:text-amber-700 transition" data-i18n="btn_book_item">Bestill &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Service 4: 4D–6D Volum -->
+                <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-serif-title text-xl text-stone-900" data-i18n="s4_title">4D–6D Volum</h3>
+                            <span class="text-[11px] font-semibold px-2 py-0.5 bg-stone-100 text-stone-600 rounded-full" data-i18n="tag_glam">Maks volum</span>
+                        </div>
+                        <p class="text-stone-600 text-sm mb-6" data-i18n="s4_desc">Tett, fløyelsmykt og luksuriøst volum for et dramatisk blikk.</p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100 flex justify-between items-center">
+                        <span class="text-xs text-stone-400">~ 2.5 t</span>
+                        <a href="https://lashlabbykseniialatysheva.setmore.com/" target="_blank" rel="noopener" class="text-sm font-semibold text-stone-900 hover:text-amber-700 transition" data-i18n="btn_book_item">Bestill &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 md:py-24 bg-white border-t border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                <h2 class="font-serif-title text-3xl sm:text-4xl text-stone-900" data-i18n="reviews_title">Google Anmeldelser</h2>
+                <p class="text-stone-500" data-i18n="reviews_subtitle">Opplev kvaliteten gjennom kundenes ord</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Review 1 -->
+                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200/60 space-y-4">
+                    <div class="flex items-center space-x-1 text-amber-500">
+                        ★★★★★
+                    </div>
+                    <p class="text-stone-700 text-sm italic" data-i18n="r1_text">
+                        «Utrolig dyktig og nøye! Vippene sitter fantastisk godt, og det var en veldig behagelig og avslappende opplevelse på benken.»
+                    </p>
+                    <div class="text-xs font-semibold text-stone-900">— Kunde på Google</div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200/60 space-y-4">
+                    <div class="flex items-center space-x-1 text-amber-500">
+                        ★★★★★
+                    </div>
+                    <p class="text-stone-700 text-sm italic" data-i18n="r2_text">
+                        «Kseniia er fantastisk! Hun tilpasser vippene nøyaktig til det som passer dine øyne best. Anbefales på det varmeste i Voss!»
+                    </p>
+                    <div class="text-xs font-semibold text-stone-900">— Kunde på Google</div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <a href="https://www.google.com/maps/search/?api=1&query=Vangsgata+14,+5700+Vossevangen" target="_blank" rel="noopener" class="inline-flex items-center space-x-2 text-xs font-semibold tracking-wider text-stone-600 hover:text-stone-900 uppercase underline underline-offset-4" data-i18n="reviews_google_link">
+                    Les alle anmeldelser på Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location / Contact Section -->
+    <section id="location" class="py-16 md:py-24 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <h2 class="font-serif-title text-3xl sm:text-4xl text-white" data-i18n="loc_title">Besøk Lash Lab</h2>
+                    <p class="text-stone-400 text-sm font-light leading-relaxed" data-i18n="loc_desc">
+                        Studioet ligger sentralt i Vossevangen. Bestill time enkelt gjennom vår Setmore-kalender.
+                    </p>
+
+                    <div class="space-y-4 pt-4 border-t border-stone-800 text-sm">
+                        <div>
+                            <p class="text-stone-500 text-xs uppercase tracking-wider mb-1" data-i18n="loc_addr_label">Adresse</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Vangsgata+14,+5700+Vossevangen" target="_blank" rel="noopener" class="text-stone-200 hover:underline">
+                                Vangsgata 14, 5700 Vossevangen
+                            </a>
+                        </div>
+                        <div>
+                            <p class="text-stone-500 text-xs uppercase tracking-wider mb-1" data-i18n="loc_hours_label">Åpningstider</p>
+                            <p class="text-stone-200" data-i18n="loc_hours">Man - Fre: 11:30 – 16:00 (Etter avtale)</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <a href="https://lashlabbykseniialatysheva.setmore.com/" target="_blank" rel="noopener" class="inline-block bg-white text-stone-900 hover:bg-stone-100 text-xs font-semibold uppercase tracking-wider px-6 py-3 rounded-full transition" data-i18n="btn_book">
+                            Bestill time
+                        </a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Vangsgata+14,+5700+Vossevangen" target="_blank" rel="noopener" class="inline-block border border-stone-700 text-stone-300 hover:bg-stone-800 text-xs font-semibold uppercase tracking-wider px-6 py-3 rounded-full transition" data-i18n="loc_map_btn">
+                            Åpne i Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 h-80 sm:h-96 rounded-2xl overflow-hidden border border-stone-800 shadow-xl">
+                    <!-- Google Maps Embed centered on Vangsgata 14, Vossevangen -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1964.887203608752!2d6.4137267!3d60.6277026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463ddb0000000001%3A0x0!2zVmFuZ3NnYXRhIDE0LCA1NzAwIFZvc3NldmFuZ2Vu!5e0!3m2!1sno!2sno!4v1700000000000!5m2!1sno!2sno" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 py-8 border-t border-stone-800 text-stone-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 Lash Lab by Kseniia Latysheva. <span data-i18n="footer_rights">Alle rettigheter reservert.</span></p>
+            <div class="flex space-x-6">
+                <a href="https://www.instagram.com/lashlab.voss/" target="_blank" rel="noopener" class="hover:text-white transition">Instagram</a>
+                <a href="https://www.facebook.com/p/LashLab-by-Kseniia-61584954024453/" target="_blank" rel="noopener" class="hover:text-white transition">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Translation Script -->
+    <script>
+        let currentLang = 'no';
+
+        const translations = {
+            no: {
+                nav_about: "Om oss",
+                nav_services: "Tjenester",
+                nav_reviews: "Anmeldelser",
+                nav_location: "Kontakt",
+                btn_book: "Bestill time",
+                btn_book_item: "Bestill →",
+                hero_badge: "Voss • Eyelash Studio",
+                hero_title_1: "Fremhev din",
+                hero_title_2: "naturlige skjønnhet",
+                hero_description: "Skreddersydd vippedesign i Vossevangen. Lette, behagelige og slitesterke vippeextensions opptil 6 uker.",
+                hero_cta: "Bestill online (Setmore)",
+                hero_secondary: "Se behandlinger",
+                hero_photo_sub: "Founder of Lash Lab studio",
+                about_title: "Kseniia Latysheva",
+                about_founder: "Founder of Lash Lab studio",
+                about_text: "«Lash Lab er skapt for å gi deg et elegant blikk som føles helt naturlig og lett på øyet. Hver behandling tilpasses din øyeform, med fokus på kvalitet, trygghet og hygiene.»",
+                services_title: "Tjenester & Behandlinger",
+                services_subtitle: "Sikre hypoallergene materialer og behagelig opplevelse",
+                
+                s1_title: "Klassisk (1D)",
+                tag_classic: "Naturlig",
+                s1_desc: "Naturlig resultat med effekt som godt påført maskara.",
+                
+                popular_tag: "Mest populær",
+                s2_title: "2D Volum",
+                tag_volume: "Mykt volum",
+                s2_desc: "Lett og naturlig fylde som gir blikket mer dybde og tetthet.",
+                
+                s3_title: "3D Volum",
+                tag_3d: "Fyldig",
+                s3_desc: "Ekstra fylde og dybde for et mer fremhevet og ekspressivt blikk.",
+                
+                s4_title: "4D–6D Volum",
+                tag_glam: "Maks volum",
+                s4_desc: "Tett, fløyelsmykt og luksuriøst volum for et dramatisk blikk.",
+                
+                reviews_title: "Google Anmeldelser",
+                reviews_subtitle: "Opplev kvaliteten gjennom kundenes ord",
+                r1_text: "«Utrolig dyktig og nøye! Vippene sitter fantastisk godt, og det var en veldig behagelig og avslappende opplevelse på benken.»",
+                r2_text: "«Kseniia er fantastisk! Hun tilpasser vippene nøyaktig til det som passer dine øyne best. Anbefales på det varmeste i Voss!»",
+                reviews_google_link: "Les alle anmeldelser på Google Maps",
+                loc_title: "Besøk Lash Lab",
+                loc_desc: "Studioet ligger sentralt i Vossevangen. Bestill time enkelt gjennom vår Setmore-kalender.",
+                loc_addr_label: "Adresse",
+                loc_hours_label: "Åpningstider",
+                loc_hours: "Man - Fre: 11:30 – 16:00 (Etter avtale)",
+                loc_map_btn: "Åpne i Google Maps",
+                footer_rights: "Alle rettigheter reservert."
+            },
+            en: {
+                nav_about: "About",
+                nav_services: "Services",
+                nav_reviews: "Reviews",
+                nav_location: "Contact",
+                btn_book: "Book Appointment",
+                btn_book_item: "Book →",
+                hero_badge: "Voss • Eyelash Studio",
+                hero_title_1: "Highlight Your",
+                hero_title_2: "Natural Beauty",
+                hero_description: "Custom eyelash extensions in Vossevangen. Lightweight, comfortable, and long-lasting results up to 6 weeks.",
+                hero_cta: "Book Online (Setmore)",
+                hero_secondary: "View Treatments",
+                hero_photo_sub: "Founder of Lash Lab studio",
+                about_title: "Kseniia Latysheva",
+                about_founder: "Founder of Lash Lab studio",
+                about_text: "“Lash Lab was created to give you an elegant, effortless look that feels completely natural and lightweight. Every procedure is customized to your eye shape with utmost care for lash health and hygiene.”",
+                services_title: "Services & Treatments",
+                services_subtitle: "Safe hypoallergenic materials and relaxing experience",
+                
+                s1_title: "Classic (1D)",
+                tag_classic: "Natural",
+                s1_desc: "A natural mascara look adding gentle length and definition.",
+                
+                popular_tag: "Most Popular",
+                s2_title: "2D Volume",
+                tag_volume: "Soft Volume",
+                s2_desc: "Light and natural fullness that adds subtle depth and density.",
+                
+                s3_title: "3D Volume",
+                tag_3d: "Full Volume",
+                s3_desc: "Extra fullness and depth for a more expressive, defined look.",
+                
+                s4_title: "4D–6D Volume",
+                tag_glam: "Max Volume",
+                s4_desc: "Dense, velvety, and luxurious volume for a bold, glamorous look.",
+                
+                reviews_title: "Google Reviews",
+                reviews_subtitle: "See what clients say about Lash Lab",
+                r1_text: "“Incredibly skilled and precise! The lashes last fantastically well, and it was a very comfortable and relaxing experience.”",
+                r2_text: "“Kseniia is amazing! She customizes the lashes perfectly to fit your eyes. Highly recommended in Voss!”",
+                reviews_google_link: "Read all reviews on Google Maps",
+                loc_title: "Visit Lash Lab",
+                loc_desc: "Located centrally in Vossevangen. Book your slot easily through our Setmore calendar.",
+                loc_addr_label: "Address",
+                loc_hours_label: "Opening Hours",
+                loc_hours: "Mon - Fri: 11:30 – 16:00 (By appointment)",
+                loc_map_btn: "Open in Google Maps",
+                footer_rights: "All rights reserved."
+            }
+        };
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'no' ? 'en' : 'no';
+            document.getElementById('lang-toggle').innerText = currentLang === 'no' ? 'EN' : 'NO';
+            document.documentElement.lang = currentLang;
+
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    el.innerText = translations[currentLang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
